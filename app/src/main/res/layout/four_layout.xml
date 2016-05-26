@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/fourFragmetn"
+    tools:context="com.yifudai.zhougonglai.materialtabtest.fgm.FourFragment"
+    android:weightSum="1">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:nestedScrollingEnabled="false"
+        android:layout_weight="0.96"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/touxiang"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="false"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="45dp">
+
+            <ImageView
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:id="@+id/image_view"
+                android:layout_gravity="center_vertical"
+                android:layout_alignEnd="@+id/username"
+                android:layout_alignParentStart="false"
+                android:onClick="onImageClick"
+                android:layout_marginTop="42dp"
+                android:layout_centerHorizontal="true" />
+
+            <com.rey.material.widget.TextView
+                android:id="@+id/username"
+                android:text="未登陆用户"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_below="@+id/touxiang"
+            android:orientation="vertical"
+            android:paddingLeft="25pt"
+            android:paddingRight="25pt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:orientation="horizontal"
+                android:gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.rey.material.widget.TextView
+                    android:id="@+id/inv"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <com.rey.material.widget.TextView
+                    android:id="@+id/inuse"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentStart="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <com.rey.material.widget.TextView
+                    android:id="@+id/invSum"
+                    android:layout_below="@+id/inv"
+                    android:layout_alignParentLeft="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <com.rey.material.widget.TextView
+                    android:id="@+id/inuseMoney"
+                    android:layout_below="@+id/inuse"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.rey.material.widget.TextView
+                    android:id="@+id/rest"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <com.rey.material.widget.TextView
+                    android:id="@+id/gral"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentStart="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <com.rey.material.widget.TextView
+                    android:id="@+id/interest"
+                    android:layout_below="@+id/rest"
+                    android:layout_alignParentLeft="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <com.rey.material.widget.TextView
+                    android:id="@+id/integralSum"
+                    android:layout_below="@+id/gral"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/list_view"
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"/>
+</LinearLayout>
